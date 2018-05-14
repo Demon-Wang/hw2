@@ -1,3 +1,10 @@
+IDE:pycharm
+语言:python
+web框架:Flask
+分词工具:结巴
+爬虫工具:BeatifulSoup+Request三方库
+
+
 1) TFIDF: 给定用自己名字命名的文件夹，请自己爬取一定数量的网页、微博形成语料集合，存入该文件夹；在线状态下，对其中的词语进行TFIDF统计，且输出到“姓名-tfidf-日期.txt“文件中
 
 tfidfpage.py
