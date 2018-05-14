@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<form method="POST" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Upload">
+</form>
+<body>
+{% if message %}
+    <p>{{ message }}</p>
+    {% for re in result %}
+        {{ re }}
+        <br />
+    {% endfor %}
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/sjet/" method="post">
+    <p>
+        <input type="text" placeholder="搜索内容" name="content">
+        <input type =submit value="搜索">
+    </p>
+      {% if results %}
+    {% for re in results %}
+        <a href="/sjet/article/{{re[0]}}" target="_blank">{{ re[1] }}</a>
+        <hr>
+    {% endfor %}
+      {% endif %}
+</form>
+</body>
+</html>
